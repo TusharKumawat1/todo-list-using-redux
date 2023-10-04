@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 30svw;
+  height: 60svh;
+  gap: 20px;
+  flex-direction: column;
+}
+.todo {
+  color: rgb(255, 255, 255);
+  background-color: #222;
+  padding: 20px;
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+.deleteBtn {
+  padding: 20px;
+  border: none;
+  color: black;
+  background-color: #e65e3c;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.deleteBtn:hover {
+  background-color: #dddddd;
+}
+.content {
+  overflow-y: hidden;
+  overflow-x: auto;
+  color: rgb(255, 255, 255);
+  background-color: #222;
+  width: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+}
+/* width */
+.content::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.content::-webkit-scrollbar-track {
+  color: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+.content::-webkit-scrollbar-thumb {
+  background: #464646;
+  border-radius: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+      width: 90svw;
+    }
+  }

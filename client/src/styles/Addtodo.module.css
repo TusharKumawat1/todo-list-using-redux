@@ -1,0 +1,42 @@
+.inputForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2svh;
+    width: 30svw;
+    height: 100px;
+    gap: 20px;
+}
+.inputField{
+    padding: 15px;
+    width: 70%;
+    font-weight: bold;
+    font-size: 18px;
+    color: azure;
+    border: 5px solid #c9c9c9;
+    background-color: transparent;
+    border-radius: 5px;
+
+}
+.inputField:focus{
+    outline: none;
+}
+.addBtn{
+    padding: 18px;
+    border:none;
+    color: black;
+    background-color: #3ce63c;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.addBtn:hover{
+    background-color: #2f6b35;
+}
+@media screen and (max-width: 1000px) {
+    .inputForm {
+      width: 90svw;
+    }
+  }
